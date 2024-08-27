@@ -33,7 +33,7 @@ jobs:
         run: cp dist/index.html dist/404.html
 
       - name: Deploy
-        uses: reggionick/s3-deploy@v4
+        uses: reggionick/s3-deploy@v3
         with:
           folder: dist
           bucket: "${{ secrets.S3_BUCKET }}"
